@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="description"
+    content="Профессиональные услуги по дизайну и отделке дома. Мы создаем уникальные интерьеры, которые отражают ваш стиль и индивидуальность.">
+  <meta name="keywords"
+    content="дизайн интерьера, отделка дома, ремонт, декор, архитектура, уютный дом, интерьер, услуги дизайнера">
+  <meta name="author" content="Дизайн пространства">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="assets/style.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+  <title>Дизайн пространства</title>
+</head>
+
+<body class="bg-dark">
+
+  <!-- Кнопка вверх -->
+  <button onclick="scrollToTop()" id="scrollToTopBtn" title="Наверх" class="rounded">
+    &and;
+  </button>
+
+  <!-- header -->
+  <header data-bs-theme="dark">
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark fw-semibold mb-3 mt-3">
+      <div class="container">
+        <a class="navbar-brand fw-semibold">Дизайн пространства</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+          aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="#services">Услуги</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#projects">Проекты</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active"><img src="img/icon/phone.png" width="25vh"> +7 (000) 000-00-00</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- слайдер -->
+  <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true"
+        aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img class="bd-placeholder-img" width="100%" height="500vh" src="img/slider_img/s_img_1.jpg" aria-hidden="true"
+          preserveAspectRatio="xMidYMid slice" focusable="false">
+        <div class="container">
+          <div class="carousel-caption text-start">
+            <h1>Почему мы?</h1>
+            <p class="opacity-75 fw-semibold">А потому что мы более чем с 30-летним опытом в области дизайна,
+              строительства и интерьера.</p>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img class="bd-placeholder-img" width="100%" height="500vh" src="img/slider_img/s_img_2.jpg" aria-hidden="true"
+          preserveAspectRatio="xMidYMid slice" focusable="false">
+        <div class="container">
+          <div class="carousel-caption text-start">
+            <h1>Наше преимущество</h1>
+            <p class="opacity-75 fw-semibold">Мы внимательно слушаем наших клиентов и учитываем их пожелания, чтобы
+              предложить уникальные
+              решения, соответствующие вашим потребностям и стилю жизни.</p>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img class="bd-placeholder-img" width="100%" height="500vh" src="img/slider_img/s_img_3.jpg" aria-hidden="true"
+          preserveAspectRatio="xMidYMid slice" focusable="false">
+        <div class="container">
+          <div class="carousel-caption text-start">
+            <h1>Появились вопросы?</h1>
+            <p class="opacity-75 fw-semibold">Не стесняйтесь, позвоните нам, уточним все что вам интересно.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+  <!-- Карточки с описанием услуг -->
+  <div class="container" id="services">
+    <h5 class="text-white mt-5 fw-semibold">Наши услуги</h5>
+    <hr class="mb-5 border-white">
+
+    <div class="row row-cols-1 row-cols-md-2 row-cols-md-3 align-items-stretch g-3 fw-semibold">
+      <div class="col">
+        <div class="card card-cover overflow-hidden h-100 rounded-4"
+          style="background-image: url('img/services/Монтаж электрики.jpg');">
+          <div class="block_1 d-flex flex-column h-100 p-5 pb-3 text-white">
+            <h5 class="pt-5 mt-5 mb-4 fw-semibold">Монтаж электрики</h5>
+            <p class="text opacity-75">Включает все аспекты работы с электрикой </p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card card-cover overflow-hidden h-100 rounded-4"
+          style="background-image: url('img/services/Малярные работы.jpg');">
+          <div class="blok_1 d-flex flex-column h-100 p-5 pb-3 text-white">
+            <h5 class="pt-5 mt-5 mb-4 fw-semibold">Малярные работы</h5>
+            <p class="text opacity-75">Необходимо дополнить описание</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card card-cover overflow-hidden h-100 rounded-4"
+          style="background-image: url('img/services/Укладка кварц винила.jpg');">
+          <div class="blok_1 d-flex flex-column h-100 p-5 pb-3 text-white">
+            <h5 class="pt-5 mt-5 mb-4 fw-semibold">Укладка кварц винила</h5>
+            <p class="text opacity-75">Необходимо дополнить описание</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card card-cover h-100 overflow-hidden rounded-4"
+          style="background-image: url('img/services/Сантехнические работы.jpg');">
+          <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+            <h5 class="pt-5 mt-5 mb-4 fw-semibold">Сантехнические работы</h5>
+            <p class="text opacity-75">Необходимо дополнить описание</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card card-cover h-100 overflow-hidden rounded-4"
+          style="background-image: url('img/services/бетонные работы.jpg');">
+          <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+            <h5 class="pt-5 mt-5 mb-4 fw-semibold">Бетонные работы</h5>
+            <p class="text opacity-75">Необходимо дополнить описание</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card card-cover h-100 overflow-hidden rounded-4"
+          style="background-image: url('img/services/Плиточные работы.jpg');">
+          <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+            <h5 class="pt-5 mt-5 mb-4 fw-semibold">Плиточные работы</h5>
+            <p class="text opacity-75">Необходимо дополнить описание</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card card-cover h-100 overflow-hidden rounded-4"
+          style="background-image: url('img/services/Строительство загородных домов.jpg');">
+          <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+            <h5 class="pt-5 mt-5 mb-4 fw-semibold">Строительство загородных домов</h5>
+            <p class="text opacity-75">Необходимо дополнить описание</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Проекты -->
+  <div class="container text-white" id="projects">
+    <h5 class="text-white mt-5 fw-semibold">Наши проекты</h5>
+    <hr class="mb-5 border-white">
+
+    <div class="row featurette">
+      <div class="col-md-7">
+        <h5 class="text">Дизайн проекта ЖК Макаровский</h5>
+        <p class="text opacity-75">Добавить описание</p>
+      </div>
+      <div class="col-md-5">
+        <div id="Project_1" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner rounded-4">
+            <div class="carousel-item active">
+              <img class="slider-img-project" src="img/projects/project_1/p_1.jpg" width="100%" height="300vh"
+                aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
+            </div>
+            <div class="carousel-item">
+              <img class="slider-img-project" src="img/projects/project_1/p_2.jpg" width="100%" height="300vh"
+                aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
+            </div>
+            <div class="carousel-item">
+              <img class="slider-img-project" src="img/projects/project_1/p_3.jpg" width="100%" height="300vh"
+                aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
+            </div>
+            <div class="carousel-item">
+              <img class="slider-img-project" src="img/projects/project_1/p_4.jpg" width="100%" height="300vh"
+                aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
+            </div>
+            <div class="carousel-item">
+              <img class="slider-img-project" src="img/projects/project_1/p_5.jpg" width="100%" height="300vh"
+                aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
+            </div>
+            <div class="carousel-item">
+              <img class="slider-img-project" src="img/projects/project_1/P_6.jpg" width="100%" height="300vh"
+                aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
+            </div>
+            <div class="carousel-item">
+              <img class="slider-img-project" src="img/projects/project_1/p_7.jpg" width="100%" height="300vh"
+                aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
+            </div>
+            <div class="carousel-item">
+              <img class="slider-img-project" src="img/projects/project_1/p_8.jpg" width="100%" height="300vh"
+                aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
+            </div>
+            <div class="carousel-item">
+              <img class="slider-img-project" src="img/projects/project_1/p_9.jpg" width="100%" height="300vh"
+                aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
+            </div>
+            <div class="carousel-item">
+              <img class="slider-img-project" src="img/projects/project_1/P_10.jpg" width="100%" height="300vh"
+                aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#Project_1" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#Project_1" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <hr class="featurette-divider mt-3 mb-5">
+
+    <div class="row featurette">
+      <div class="col-md-7 order-md-2">
+        <h5 class="text">Дизайн проекта ЖК Мечта</h5>
+        <p class="text opacity-75">Добавить описание</p>
+      </div>
+      <div class="col-md-5 order-md-1">
+        <div id="Project_2" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner rounded-4">
+            <div class="carousel-item active">
+              <img class="slider-img-project" src="img/projects/project_2/p_1.jpg" width="100%" height="300vh"
+                aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
+            </div>
+            <div class="carousel-item">
+              <img class="slider-img-project" src="img/projects/project_2/p_2.jpg" width="100%" height="300vh"
+                aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
+            </div>
+            <div class="carousel-item">
+              <img class="slider-img-project" src="img/projects/project_2/p_3.jpg" width="100%" height="300vh"
+                aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
+            </div>
+            <div class="carousel-item">
+              <img class="slider-img-project" src="img/projects/project_2/p_4.jpg" width="100%" height="300vh"
+                aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
+            </div>
+            <div class="carousel-item">
+              <img class="slider-img-project" src="img/projects/project_2/p_5.jpg" width="100%" height="300vh"
+                aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
+            </div>
+            <div class="carousel-item">
+              <img class="slider-img-project" src="img/projects/project_2/P_6.jpg" width="100%" height="300vh"
+                aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
+            </div>
+            <div class="carousel-item">
+              <img class="slider-img-project" src="img/projects/project_2/p_7.jpg" width="100%" height="300vh"
+                aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
+            </div>
+            <div class="carousel-item">
+              <img class="slider-img-project" src="img/projects/project_2/p_8.jpg" width="100%" height="300vh"
+                aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
+            </div>
+            <div class="carousel-item">
+              <img class="slider-img-project" src="img/projects/project_2/p_9.jpg" width="100%" height="300vh"
+                aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
+            </div>
+            <div class="carousel-item">
+              <img class="slider-img-project" src="img/projects/project_2/P_10.jpg" width="100%" height="300vh"
+                aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#Project_2" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#Project_2" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <hr class="featurette-divider mt-3 mb-5">
+
+    <div class="row featurette">
+      <div class="col-md-7">
+        <h5 class="text">Первомайская 60</h5>
+        <p class="text opacity-75">Добавить описание</p>
+      </div>
+      <div class="col-md-5">
+        <div id="Project_3" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner rounded-4">
+            <div class="carousel-item active">
+              <img class="slider-img-project" src="img/projects/project_3/p_1.jpg" width="100%" height="300vh"
+                aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
+            </div>
+            <div class="carousel-item">
+              <img class="slider-img-project" src="img/projects/project_3/p_2.jpg" width="100%" height="300vh"
+                aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
+            </div>
+            <div class="carousel-item">
+              <img class="slider-img-project" src="img/projects/project_3/p_3.jpg" width="100%" height="300vh"
+                aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
+            </div>
+            <div class="carousel-item">
+              <img class="slider-img-project" src="img/projects/project_3/p_4.jpg" width="100%" height="300vh"
+                aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
+            </div>
+            <div class="carousel-item">
+              <img class="slider-img-project" src="img/projects/project_3/p_5.jpg" width="100%" height="300vh"
+                aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
+            </div>
+            <div class="carousel-item">
+              <img class="slider-img-project" src="img/projects/project_3/P_6.jpg" width="100%" height="300vh"
+                aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
+            </div>
+            <div class="carousel-item">
+              <img class="slider-img-project" src="img/projects/project_3/p_7.jpg" width="100%" height="300vh"
+                aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
+            </div>
+            <div class="carousel-item">
+              <img class="slider-img-project" src="img/projects/project_3/p_8.jpg" width="100%" height="300vh"
+                aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
+            </div>
+            <div class="carousel-item">
+              <img class="slider-img-project" src="img/projects/project_3/p_9.jpg" width="100%" height="300vh"
+                aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
+            </div>
+            <div class="carousel-item">
+              <img class="slider-img-project" src="img/projects/project_3/P_10.jpg" width="100%" height="300vh"
+                aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#Project_3" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#Project_3" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Footer -->
+  <div class="container text-white">
+    <hr class="mt-5">
+    <footer class="py-3 my-4 text-center">
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 g-3">
+        <div class="col">
+          <h5 class="text">Контакты</h5>
+          <p class="text">+7 000 000 00 00<br>
+            г. Екатеринбург, ул. Улица
+          </p>
+        </div>
+        <div class="col">
+          <h5 class="text">График</h5>
+          <p class="text">
+            Ежедневно<br>
+            С 8:00 до 18:00
+          </p>
+        </div>
+        <div class="col">
+          <h5 class="text">Появились вопросы</h5>
+          <p class="text">
+            Позвоните нам<br>
+            +7 000 000 00 00
+          </p>
+        </div>
+        <div class="col">
+          <h5 class="text">Мы в соцетях</h5>
+          <a href="#"><img src="img/link_img/telegram-svgrepo-com.svg" width="45vh" class="footer-icon m-1"></a>
+          <a href="#"><img src="img/link_img/vk-v2-svgrepo-com.svg" width="40vh" class="footer-icon m-1"></a>
+          <a href="#"><img src="img/link_img/whatsapp-color-svgrepo-com.svg" width="40vh" class="footer-icon m-1"></a>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+</body>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
+<script src="assets/script.js"></script>
+
+</html>
